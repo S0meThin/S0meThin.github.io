@@ -2,7 +2,7 @@
   "name": "my_site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://S0meThin.github.io/S0meThin.github.io",
+  "homepage": "https://S0meThin.github.io/",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
     "@emailjs/browser": "^3.12.1",
