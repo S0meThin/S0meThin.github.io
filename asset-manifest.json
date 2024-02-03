@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/S0meThin.github.io/static/css/main.175013c3.css",
+    "main.js": "/S0meThin.github.io/static/js/main.62e59f57.js",
+    "static/js/787.6dac1136.chunk.js": "/S0meThin.github.io/static/js/787.6dac1136.chunk.js",
+    "static/media/background.mp4": "/S0meThin.github.io/static/media/background.cf4c4bb2dde62f153cc6.mp4",
+    "static/media/Rubik-Medium.ttf": "/S0meThin.github.io/static/media/Rubik-Medium.0e121b4fa4d6e9bc5c69.ttf",
+    "static/media/QwitcherGrypen-Regular.ttf": "/S0meThin.github.io/static/media/QwitcherGrypen-Regular.1d4fd8dfcdec4f6b48c1.ttf",
+    "index.html": "/S0meThin.github.io/index.html",
+    "main.175013c3.css.map": "/S0meThin.github.io/static/css/main.175013c3.css.map",
+    "main.62e59f57.js.map": "/S0meThin.github.io/static/js/main.62e59f57.js.map",
+    "787.6dac1136.chunk.js.map": "/S0meThin.github.io/static/js/787.6dac1136.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.175013c3.css",
+    "static/js/main.62e59f57.js"
+  ]
+}
