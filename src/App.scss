@@ -1,0 +1,90 @@
+$primary-color: #FFFFFF;
+$window-width: get-vw(72px);
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Rubik', serif;
+  src: url('./tools/Fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Qwitcher Grypen";
+  font-weight: 400;
+  src: url('./tools/Fonts/QwitcherGrypen-Regular.ttf')
+}
+
+@for $i from 10 through 72 {
+  .fs-#{$i} {
+      font-size: #{$i}px;
+  }    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik';
+}
+
+body {
+  background: black;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+}
+
+.interactive-btn {
+  border: 1px solid #FFFFFF;
+  font-size: 32px;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  color: $primary-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/*
+  Content of the main page
+*/
+
+.content-content {
+  display: flex;
+  justify-content: center;
+}
+
+.c-content {
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+  padding: 10% 8% 10% 8%;
+}
+
+.c-introduction {
+  font-size: 48px;
+  text-align: left;
+}
+
+.c-description {
+  font-size: 24px;
+}
+
+.interactive-btn {
+  margin-top: 10%;
+  width: fit-content;
+  padding: 6px 12px 6px 12px;
+}

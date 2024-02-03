@@ -1,0 +1,18 @@
+img {
+    width: 20vmin;
+    height: 35vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition:cubic-bezier(.26,.57,.65,1.39) 300ms;
+}
+.pictures {
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    left: 15%; 
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+img:hover {
+    transform:scale(1.1);
+}

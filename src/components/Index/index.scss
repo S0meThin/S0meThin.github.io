@@ -1,0 +1,33 @@
+.i-main {
+    width: 100%;
+    height: 100vh;
+}
+
+.interactive-btn {
+    transition: all 0.3s ease-out;
+}
+
+.interactive-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.c-leftnotes {
+    animation: fadeIn 2.1s backwards;
+    animation-delay: 0.3s;
+}
+
+.c-rightnotes {
+    animation: fadeIn 2.1s backwards;
+    animation-delay: 0.5s;
+}
+
+.c-animation {
+    width: 300px;
+    height: 300px;
+}
+
+.about-btn {
+    display:inline-block;
+    text-align: center;
+}

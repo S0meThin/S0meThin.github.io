@@ -1,0 +1,41 @@
+.content-lowerContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lowerContent-socials {
+    width: 45%;
+}
+
+.lowerContent-map {
+    height: 100vh;
+    width: 45%;
+}
+
+.lowerContent-map-info {
+    margin-top:40px;
+    font-size:24px;
+}
+
+.m-socials {
+    display: flex;
+    flex-flow: column;
+}
+.m-socials a:hover{
+    transform: scale(1.2);
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.lowerContent-map-map {
+    position: absolute;
+    width: 45%;
+    height: 38%;
+}
