@@ -8,7 +8,7 @@ import { ThreeDots } from 'react-loader-spinner'
 function About() {
     return (
         <div className = "a-main">
-            <video src = {videoBG} autoPlay loop muted/>
+            <video src = {videoBG} autoPlay loop muted playsinline />
             <div className = "about__menuNcont fullpage-content">
             <div className = "about__content-menu">
                 <Menu />

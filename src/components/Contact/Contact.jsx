@@ -31,7 +31,7 @@ function Contact() {
 
     return (
     <div className = "contact__fullpage">
-        <video src = {videoBG} autoPlay loop muted/>
+        <video src = {videoBG} autoPlay loop muted playsinline />
         <div className = "contact__menuNcont fullpage-content">
             <div className = "contact__content-menu">
                 <Menu />

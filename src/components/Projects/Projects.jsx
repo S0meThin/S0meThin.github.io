@@ -8,7 +8,7 @@ import Content from './Content'
 function Contact() {
     return (
     <div className = "c-main">
-        <video src = {videoBG} autoPlay loop muted/>
+        <video src = {videoBG} autoPlay loop muted playsinline />
         <div className = "content">
         <div className = "content-menu">
             <Menu />
