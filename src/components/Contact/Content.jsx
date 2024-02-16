@@ -26,7 +26,7 @@ function Content() {
         )
     }
     return (
-        <section className = 'c-content contact-content'>
+        <section className = 'contact-content'>
             <div className = "c-contact-content">
                 <div className = "c-contact-content-first">
                 <h1 className = "c-contact">
@@ -44,14 +44,14 @@ function Content() {
                                         Name  
                                     </label>
                                     <br />
-                                    <input type="text" name = "name" autoComplete='off'/>
+                                    <input type="text" name = "name" autoComplete='off' placeholder = "Name"/>
                                 </div>
                             <div className = "c-contact-form-email">
                                 <label htmlFor="email">
                                     Email  
                                 </label>
                                 <br />
-                                <input type="email" name = "email" autoComplete='off' />
+                                <input type="email" name = "email" autoComplete='off' placeholder = "Email"/>
                             </div>
                             </div>
                             <div className = "c-contact-form-subject">
@@ -59,14 +59,14 @@ function Content() {
                                     Email subject  
                                 </label>
                                 <br />
-                                <input type="text" name = "subject" autoComplete='off' />
+                                <input type="text" name = "subject" autoComplete='off' placeholder = "Subject"/>
                             </div>
                             <div className = "c-contact-form-message">
                                 <label htmlFor="message">
                                     Message  
                                 </label>
                                 <br />
-                                <textarea name="message" id="" cols="30" rows="10" autoComplete='off'></textarea>
+                                <textarea name="message" id="" cols="30" rows="10" autoComplete='off' placeholder = "Message"></textarea>
                             </div>
                         </div>
                         <input type="submit" className = "c-contact-submit"/>

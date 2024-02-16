@@ -1,17 +1,29 @@
-.c-main {
+.contact__fullpage {
     width: 100%;
-    height: 200vh;
 }
 
-.contact-content {
-    padding-top: 4%;
+.contact__menuNcont {
+    height: 100vh;
+    width: 100%
+}
+
+.contact__mapNsoc {
+    height: 100vh;
+    width: 100%
+}
+
+.contact__content-menu { 
+    width: 100%;
+    display: flex;
     justify-content: center;
-    width: 50%;
-    animation: fadeIn 2.1s backwards;
 }
 
-.c-content {
-    padding-bottom: 6.5%;
+.c-contact-content-first {
+    margin-top: 100px;
+}
+
+.contact__content-content {
+    animation: fadeIn 2.1s backwards;
 }
 
 .c-contact {
@@ -21,7 +33,9 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     text-shadow: 1px 2px 4px white;
+    line-height: 110px;
 }
+
 
 .c-contact-info {
     padding-top: 16px;
@@ -45,6 +59,11 @@
         width: 100%;
         padding: 0px 5px 0px 5px;
     }
+
+    input::placeholder, textarea::placeholder {
+        color:#242424;
+    }
+
     div {
         margin-top: 20px;
     }
@@ -100,11 +119,59 @@
     cursor: pointer;
 }
 
-// .gZmPOF {
-//     position: absolute;
-//     top: 25%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     animation: fadeOut 0.5s 0.5s;
-//     animation-fill-mode: forwards;
-// }
+@media only screen and (max-width: 600px) {
+    .c-contact-content-first {
+        margin-top: 0px;
+        div {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 44px;
+        }
+    }
+
+    .c-contact-firstLine {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .c-contact-form-email, .c-contact-form-name {
+        width: 60%;
+        input {
+            height: 40px;
+        }
+    }
+
+    .c-contact-form-subject, .c-contact-form-message {
+        width: 60%;
+        input {
+            height: 40px;
+        }
+    }
+  }
+  
+  @media only screen and (max-height: 1000px) {
+    .c-contact-content-first {
+        margin-top: 0px;
+    }
+
+    .c-contact-form-holder {
+        div {
+            margin-top: 2px;
+        }
+    }
+  }
+
+  @media only screen and (max-height: 800px) {
+    label {
+        display: none;
+    }
+    br {
+        display:none;
+    }
+
+    .c-contact-form-holder input::placeholder,.c-contact-form-holder textarea::placeholder {
+        color: lightgrey;
+    }
+  }

@@ -15,7 +15,7 @@ a {
     justify-content: center;
 }
 
-.m-content {
+.m-content { 
     width: 94%;
     display: flex;
     flex-flow: row;
@@ -62,10 +62,6 @@ a {
     transform-origin: center;
 }
 
-.m-nav {
-
-}
-
 .mf {
   display: flex;
   justify-content: space-between;
@@ -76,11 +72,6 @@ a {
   font-size: 30px;
   font-weight: 500;
   margin-right: 25%;
-}
-
-.m-socials {
-  width: 16%;
-  font-size: 36px;
 }
 
 .m-youtube {
@@ -97,4 +88,63 @@ a {
 
 .m-linkedin {
   color:#0A66C2;
+}
+
+.m-bars-icon {
+  font-size: 32px;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .m-pages {
+    display: none;
+  }
+
+  .m-bars-icon {
+    display: block;
+  }
+}
+
+.expandable_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+  flex-direction: column;
+  font-size: 44px;
+  justify-content: center;
+  line-height: 70px;
+  align-items: center;
+  display: none;
+}
+
+.display {
+  display: flex;
+}
+
+.fitLink {
+  width:fit-content;
+}
+
+.fitLink::before{
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  background-color: #e8e8e8;
+  transition: all 0.5s ease-out;
+  transform: scaleX(0);
+}
+.fitLink:hover::before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }

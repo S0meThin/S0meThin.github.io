@@ -12,12 +12,12 @@ import {
 
 function Content() {
     return (
-        <section className = 'c-content'>
+        <section className = 'home-content'>
             <div className = 'c-notes c-leftnotes'>
                 <div className = 'c-introduction'>
-                    <span className="fs-72">Hey,</span><br/>I`m Oleh Stepuniak<br/><span class = "fs-32">Front-End, Back-End developer.</span>
+                    <span className="fs-84">Hey,</span><br/>I`m Oleh Stepuniak<br/><span class = "fs-44">Front-End, Back-End developer.</span>
                 </div>
-                <Link to = "/contact">
+                <Link to = "/contact" className = "contact-btn">
                     <div className = 'interactive-btn'>
                         Contact me
                     </div>
@@ -27,16 +27,16 @@ function Content() {
                 <div className = "c-animation">
                     <div className="stage-cube-cont">
                     <div className="cubespinner">
-                        <div className="face1">
+                        <div className="face1 face">
                         <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                         </div>
-                        <div className="face2">
+                        <div className="face2 face">
                         <FontAwesomeIcon icon={faPython} color="#28A4D9" />
                         </div>
-                        <div className="face3">
+                        <div className="face3 face">
                         <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                         </div>
-                        <div className="face4">
+                        <div className="face4 face">
                         <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                         </div>
                     </div>

@@ -9,11 +9,11 @@ function Index() {
     return (
     <div className = "i-main">
         <video src = {videoBG} autoPlay loop muted/>
-        <div className = "content">
-        <div className = "content-menu">
+        <div className = "home__menuNcont fullpage-content">
+        <div className = "home__content-menu">
             <Menu />
         </div>
-        <div className = "content-content">
+        <div className = "home__content-content">
             <Content />
         </div>
         </div>

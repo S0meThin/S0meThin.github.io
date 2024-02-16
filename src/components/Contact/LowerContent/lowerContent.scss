@@ -1,41 +1,66 @@
 .content-lowerContent {
-    display: flex;
-    justify-content: space-around;
+    height: 100vh;
 }
 
 .lowerContent-socials {
-    width: 45%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .lowerContent-map {
-    height: 100vh;
-    width: 45%;
-}
-
-.lowerContent-map-info {
-    margin-top:40px;
-    font-size:24px;
+    width: 100%;
+    padding-top: 50px;
 }
 
 .m-socials {
     display: flex;
-    flex-flow: column;
+    font-size: 64px;
+    margin-top: 20px;
+    justify-content: space-between;
+    a div {
+        margin: 20px;
+    }
 }
 .m-socials a:hover{
     transform: scale(1.2);
 }
 
 .leaflet-container {
-    width: 100%;
+    width: 98%;
     height: 100%;
     position: relative;
     opacity: 0;
-    animation: backInRight 1s 1.2s;
+    animation: fadeIn 1s 1.2s;
     animation-fill-mode: forwards;
 }
 
 .lowerContent-map-map {
-    position: absolute;
-    width: 45%;
-    height: 38%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+
+.lowerContent-socials-info {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+}
+
+.lowerContent-map-info {
+    font-size: 72px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .lowerContent-map-map {
+        height: 250px;
+    }
 }

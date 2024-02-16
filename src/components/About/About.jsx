@@ -9,11 +9,11 @@ function About() {
     return (
         <div className = "a-main">
             <video src = {videoBG} autoPlay loop muted/>
-            <div className = "content">
-            <div className = "content-menu">
+            <div className = "about__menuNcont fullpage-content">
+            <div className = "about__content-menu">
                 <Menu />
             </div>
-            <div className = "content-content">
+            <div className = "about__content-content">
                 <Content />
             </div>
             </div>

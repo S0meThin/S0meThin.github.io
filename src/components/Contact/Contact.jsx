@@ -30,18 +30,18 @@ function Contact() {
     const isVisible = useIsVisible(ref);
 
     return (
-    <div className = "c-main">
+    <div className = "contact__fullpage">
         <video src = {videoBG} autoPlay loop muted/>
-        <div className = "content">
-        <div className = "content-menu">
-            <Menu />
+        <div className = "contact__menuNcont fullpage-content">
+            <div className = "contact__content-menu">
+                <Menu />
+            </div>
+            <div className = "contact__content-content">
+                <Content />
+            </div>
         </div>
-        <div className = "content-content">
-            <Content />
-        </div>
-        <div className = "content-content-lower" ref={ref}>
+        <div className = "contact__mapNsoc" ref={ref}>
             <LowerContent isVisible={isVisible}/>
-        </div>
         </div>
     </div>
     )

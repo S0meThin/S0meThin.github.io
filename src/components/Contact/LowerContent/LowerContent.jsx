@@ -9,8 +9,25 @@ const LowerContent = ({isVisible}) => {
     if (isVisible) {
         return (
             <section className = "content-lowerContent">
+                <div className = "lowerContent-map">
+                    <div className = "lowerContent-map-info">
+                        My location on the map:
+                    </div>
+                    <br />
+                    <div className='lowerContent-map-map'>
+                        <MapContainer center={[53.54619816035487, -113.49520262041003]} zoom={4} zoomControl={false} scrollWheelZoom={false} doubleClickZoom={false} touchZoom={false} boxZoom={false} >
+                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"  />
+                            <Marker position = {[53.54619816035487, -113.49520262041003]}>
+                                <Popup>Oleh lives here</Popup>
+                            </Marker>
+                        </MapContainer>
+                    </div>
+                </div>
                 <div className = "lowerContent-socials">
-                <div className = "mf m-socials">
+                    <div className = "lowerContent-socials-info">
+                        My Socials:
+                    </div>
+                <div className = "m-socials">
                 <Link to = ''>
                     <div className = "m-youtube"><FontAwesomeIcon icon={faYoutube} /></div>
                 </Link>
@@ -23,21 +40,7 @@ const LowerContent = ({isVisible}) => {
                 <Link to = ''>
                     <div className = "m-linkedin"><FontAwesomeIcon icon={faLinkedin} /></div>
                 </Link>
-            </div>
                 </div>
-                <div className = "lowerContent-map">
-                    <div className = "lowerContent-map-info">
-                        Oleh Stepuniak - Edmonton, AB, Canada
-                    </div>
-                    <br />
-                    <div className='lowerContent-map-map'>
-                        <MapContainer center={[53.54619816035487, -113.49520262041003]} zoom={4} zoomControl={false} scrollWheelZoom={false} doubleClickZoom={false} touchZoom={false} boxZoom={false} >
-                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"  />
-                            <Marker position = {[53.54619816035487, -113.49520262041003]}>
-                                <Popup>Oleh lives here</Popup>
-                            </Marker>
-                        </MapContainer>
-                    </div>
                 </div>
             </section>
         )
